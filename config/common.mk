@@ -274,6 +274,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES_DEBUG += \
     disable-overlays
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    vendor/lineage/config/permissions/privapp-permissions-settings.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-settings.xml
+
 # rsync
 PRODUCT_PACKAGES += \
     rsync
